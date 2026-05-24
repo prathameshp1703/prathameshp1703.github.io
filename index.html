@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
     --navy: #0f1b2d;
     --navy-mid: #162435;
@@ -24,9 +23,7 @@
     --font: 'DM Sans', sans-serif;
     --mono: 'DM Mono', monospace;
   }
-
   html { scroll-behavior: smooth; }
-
   body {
     font-family: var(--font);
     background: var(--navy);
@@ -34,7 +31,6 @@
     min-height: 100vh;
     display: flex;
   }
-
   /* ── SIDEBAR ── */
   #sidebar {
     width: var(--sidebar-w);
@@ -50,7 +46,6 @@
     overflow-y: auto;
     z-index: 100;
   }
-
   .profile-img {
     width: 110px; height: 110px;
     border-radius: 50%;
@@ -62,7 +57,6 @@
     flex-shrink: 0;
     box-shadow: 0 8px 24px rgba(79, 195, 247, 0.2);
   }
-
   #sidebar h1 {
     font-size: 1.15rem;
     font-weight: 700;
@@ -71,7 +65,6 @@
     text-align: center;
     margin-bottom: 0.35rem;
   }
-
   .subtitle {
     font-size: 0.78rem;
     color: var(--accent);
@@ -81,16 +74,13 @@
     font-weight: 600;
     letter-spacing: 1px;
   }
-
   .location {
     font-size: 0.76rem;
     color: var(--text-dim);
     text-align: center;
     margin-bottom: 1.8rem;
   }
-
   nav { width: 100%; margin-bottom: 2rem; }
-
   nav a {
     display: flex;
     align-items: center;
@@ -104,7 +94,6 @@
     transition: all 0.2s ease;
     margin-bottom: 4px;
   }
-
   nav a .nav-dot {
     width: 5px; height: 5px;
     border-radius: 50%;
@@ -112,25 +101,21 @@
     flex-shrink: 0;
     transition: all 0.2s ease;
   }
-
   nav a:hover, nav a.active {
     background: var(--accent-dim);
     color: var(--accent);
     transform: translateX(4px);
   }
-
   nav a:hover .nav-dot, nav a.active .nav-dot {
     background: var(--accent);
     transform: scale(1.4);
   }
-
   .divider {
     width: 100%;
     height: 1px;
     background: var(--border);
     margin: 1.2rem 0;
   }
-
   .social-links {
     display: flex;
     flex-direction: column;
@@ -138,7 +123,6 @@
     width: 100%;
     margin-bottom: 1.5rem;
   }
-
   .social-links a {
     color: var(--text-muted);
     text-decoration: none;
@@ -151,19 +135,16 @@
     text-align: center;
     font-weight: 500;
   }
-
   .social-links a:hover {
     color: var(--accent);
     border-color: var(--accent);
     background: var(--accent-dim);
     transform: translateY(-2px);
   }
-
   .contact-info {
     width: 100%;
     margin-bottom: auto;
   }
-
   .contact-item {
     display: flex;
     align-items: center;
@@ -175,13 +156,10 @@
     word-break: break-all;
     transition: color 0.2s ease;
   }
-
   .contact-item:hover {
     color: var(--accent);
   }
-
   .contact-item svg { flex-shrink: 0; }
-
   /* ── MAIN ── */
   main {
     margin-left: var(--sidebar-w);
@@ -189,9 +167,7 @@
     padding: 3rem 3.5rem;
     max-width: 900px;
   }
-
   section { margin-bottom: 4rem; }
-
   .section-label {
     font-size: 0.65rem;
     font-family: var(--mono);
@@ -201,7 +177,6 @@
     margin-bottom: 0.6rem;
     font-weight: 700;
   }
-
   h2 {
     font-size: 1.55rem;
     font-weight: 700;
@@ -211,7 +186,6 @@
     border-bottom: 2px solid var(--accent);
     letter-spacing: -0.5px;
   }
-
   /* about */
   #about p {
     font-size: 0.96rem;
@@ -219,19 +193,16 @@
     color: var(--text-muted);
     max-width: 700px;
   }
-
   .highlight {
     color: var(--accent);
     font-weight: 600;
   }
-
   /* experience */
   .job {
     position: relative;
     padding-left: 1.6rem;
     margin-bottom: 2.8rem;
   }
-
   .job::before {
     content: '';
     position: absolute;
@@ -239,9 +210,7 @@
     width: 2px;
     background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
   }
-
   .job:last-child::before { bottom: 0; }
-
   .job-dot {
     position: absolute;
     left: -5px; top: 5px;
@@ -251,7 +220,6 @@
     border: 3px solid var(--navy-mid);
     box-shadow: 0 0 12px rgba(79, 195, 247, 0.4);
   }
-
   .job-header {
     display: flex;
     justify-content: space-between;
@@ -260,13 +228,11 @@
     flex-wrap: wrap;
     margin-bottom: 0.4rem;
   }
-
   .job-title {
     font-size: 1.02rem;
     font-weight: 700;
     color: var(--text-main);
   }
-
   .job-period {
     font-size: 0.73rem;
     font-family: var(--mono);
@@ -275,7 +241,6 @@
     padding-top: 3px;
     font-weight: 500;
   }
-
   .job-company {
     font-size: 0.85rem;
     color: var(--accent);
@@ -283,12 +248,10 @@
     margin-bottom: 1rem;
     letter-spacing: 0.3px;
   }
-
   .job ul {
     list-style: none;
     padding: 0;
   }
-
   .job ul li {
     font-size: 0.88rem;
     color: var(--text-muted);
@@ -297,16 +260,13 @@
     padding-left: 1.2rem;
     position: relative;
   }
-
   .job ul li::before {
     content: '▸';
     position: absolute; left: 0;
     color: var(--accent);
     font-weight: 700;
   }
-
   strong { color: var(--text-main); font-weight: 600; }
-
   /* education */
   .edu-card {
     background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy-mid) 100%);
@@ -315,12 +275,10 @@
     padding: 1.5rem 1.6rem;
     transition: all 0.3s ease;
   }
-
   .edu-card:hover {
     border-color: var(--accent);
     box-shadow: 0 4px 16px rgba(79, 195, 247, 0.1);
   }
-
   .edu-card h3 {
     font-size: 1rem;
     font-weight: 700;
@@ -328,43 +286,35 @@
     margin-bottom: 0.3rem;
     letter-spacing: -0.3px;
   }
-
   .edu-card .degree {
     font-size: 0.85rem;
     color: var(--accent);
     margin-bottom: 0.8rem;
     font-weight: 600;
   }
-
   .edu-meta {
     display: flex;
     gap: 1.8rem;
     flex-wrap: wrap;
     margin-bottom: 0.8rem;
   }
-
   .edu-meta span {
     font-size: 0.77rem;
     color: var(--text-dim);
     font-family: var(--mono);
   }
-
   .edu-meta span b {
     color: var(--text-muted);
     font-weight: 600;
   }
-
   .coursework {
     font-size: 0.77rem;
     color: var(--text-dim);
     line-height: 1.6;
   }
-
   .coursework b { color: var(--text-muted); font-weight: 600; }
-
   /* skills */
   .skill-group { margin-bottom: 1.4rem; }
-
   .skill-group-label {
     font-size: 0.73rem;
     font-family: var(--mono);
@@ -374,13 +324,11 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-
   .skill-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
   }
-
   .tag {
     font-size: 0.76rem;
     font-family: var(--mono);
@@ -392,20 +340,17 @@
     transition: all 0.2s ease;
     font-weight: 500;
   }
-
   .tag:hover {
     background: #29b6f644;
     border-color: var(--accent);
     transform: translateY(-2px);
   }
-
   /* achievements */
   .achievements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.2rem;
   }
-
   .achievement {
     display: flex;
     flex-direction: column;
@@ -417,13 +362,11 @@
     border-radius: 9px;
     transition: all 0.3s ease;
   }
-
   .achievement:hover {
     border-color: var(--accent);
     box-shadow: 0 6px 20px rgba(79, 195, 247, 0.15);
     transform: translateY(-4px);
   }
-
   .badge-icon {
     width: 44px; height: 44px;
     border-radius: 8px;
@@ -436,9 +379,7 @@
     font-weight: 700;
     box-shadow: 0 4px 12px rgba(79, 195, 247, 0.3);
   }
-
   .achievement-text { flex: 1; width: 100%; }
-
   .achievement-title {
     font-size: 0.92rem;
     font-weight: 700;
@@ -446,13 +387,11 @@
     margin-bottom: 0.2rem;
     letter-spacing: -0.2px;
   }
-
   .achievement-detail {
     font-size: 0.79rem;
     color: var(--text-muted);
     line-height: 1.5;
   }
-
   .ranking-badge {
     display: inline-block;
     background: var(--accent-dim);
@@ -465,7 +404,6 @@
     font-weight: 600;
     margin-top: 0.4rem;
   }
-
   /* responsive */
   @media (max-width: 768px) {
     :root { --sidebar-w: 0; }
@@ -481,7 +419,6 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-
     .profile-img { width: 80px; height: 80px; font-size: 1.8rem; margin: 0 1rem 0 0; }
     
     #sidebar h1 { font-size: 1.1rem; }
@@ -500,7 +437,6 @@
     
     .achievements-grid { grid-template-columns: 1fr; }
   }
-
   @media (max-width: 480px) {
     main { padding: 1.5rem 1rem; }
     h2 { font-size: 1.15rem; margin-bottom: 1.2rem; }
@@ -511,17 +447,14 @@
 </style>
 </head>
 <body>
-
 <aside id="sidebar">
   <div class="profile-img">PP</div>
   <div>
     <h1>Prathamesh Paraswar</h1>
     <p class="subtitle">Software Engineer II</p>
-    <p class="location">📍 Pune, India</p>
+    <p class="location">📍 Pune, Maharashtra</p>
   </div>
-
   <div class="divider"></div>
-
   <nav>
     <a href="#about" class="active"><span class="nav-dot"></span> About</a>
     <a href="#experience"><span class="nav-dot"></span> Experience</a>
@@ -529,15 +462,12 @@
     <a href="#skills"><span class="nav-dot"></span> Skills</a>
     <a href="#achievements"><span class="nav-dot"></span> Achievements</a>
   </nav>
-
   <div class="divider"></div>
-
   <div class="social-links">
     <a href="https://www.linkedin.com/in/prathamesh-paraswar-149357192/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     <a href="https://github.com/prathameshp1703" target="_blank" rel="noopener noreferrer">GitHub</a>
     <a href="https://leetcode.com/u/Prathamesh1844/" target="_blank" rel="noopener noreferrer">LeetCode</a>
   </div>
-
   <div class="contact-info">
     <div class="contact-item">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
@@ -549,21 +479,17 @@
     </div>
   </div>
 </aside>
-
 <main>
-
   <section id="about">
     <p class="section-label">// overview</p>
     <h2>About</h2>
     <p>
-      Software Engineer with <span class="highlight">3+ years of experience</span> architecting distributed backend systems, designing fault-tolerant data pipelines, and deploying mission-critical AWS microservices at scale. Expert in <span class="highlight">C++, Java, and Python</span> with deep competitive programming accolades (Top 2.37% on LeetCode). Proven track record driving <span class="highlight">10x throughput gains</span> and 70% latency reductions through rigorous performance optimization, coupled with strong expertise in L3 production support, incident resolution, and building highly reliable cloud infrastructure for demanding workloads.
+      Software Engineer with <span class="highlight">3+ years of experience</span> building distributed backend systems, data pipelines, and AWS microservices. Strong foundation in <span class="highlight">C++, Java, and Python</span> backed by top-tier competitive programming rankings (Top 2.5% LeetCode). Proven track record of driving massive performance optimizations (including <span class="highlight">10x throughput gains</span>) alongside deep expertise in debugging, L3 production support, and delivering highly reliable cloud architectures.
     </p>
   </section>
-
   <section id="experience">
     <p class="section-label">// work history</p>
     <h2>Experience</h2>
-
     <div class="job">
       <div class="job-dot"></div>
       <div class="job-header">
@@ -572,12 +498,11 @@
       </div>
       <div class="job-company">Blueshift · Pune, India</div>
       <ul>
-        <li>Built the <strong>Debug Center</strong> feature leveraging <strong>AWS Athena</strong> to surface pipeline errors and bottlenecks, directly reducing customer support escalations and exposing actionable diagnostics to end-users.</li>
-        <li>Architected data storage infrastructure and designed scalable ingestion pipelines within the storage domain, ensuring <strong>sub-100ms latency</strong> and reliable data access for 10+ downstream microservices.</li>
-        <li>Led cross-functional collaboration with Product, Support, and Engineering teams to translate complex business requirements into robust technical specifications, delivering 100% on-time releases with zero production incidents.</li>
+        <li>Built the Debug Center feature using AWS Athena to surface pipeline errors, cutting customer support escalations by exposing actionable diagnostics directly to end-users.</li>
+        <li>Designed data storage architecture and ingestion pipelines within the storage domain, ensuring reliable, low-latency data access for downstream microservices.</li>
+        <li>Collaborated with cross-functional teams (Product, Support, Engineering) to translate requirements into technical specifications, ensuring high software quality and on-time delivery.</li>
       </ul>
     </div>
-
     <div class="job">
       <div class="job-dot"></div>
       <div class="job-header">
@@ -586,16 +511,16 @@
       </div>
       <div class="job-company">Trading Technologies · Pune, India</div>
       <ul>
-        <li><strong>Engineered a 10x throughput improvement:</strong> Re-architected monolithic EC2 pipeline into distributed <strong>Apache Spark</strong> microservices, cutting processing time by <strong>70%</strong> and scaling from 50M to 500M records/day.</li>
-        <li>Built production-grade Spark transformation pipelines integrating <strong>40+ financial models</strong>, with automated job orchestration via <strong>S3 Event Notifications</strong> and <strong>AWS Lambda</strong> for near real-time processing.</li>
-        <li>Developed <strong>DataLens</strong> — a high-performance trade data query and visualization platform powered by <strong>AWS Athena</strong>, handling 10B+ row scans with infinite-scroll UI for seamless exploration of large datasets.</li>
-        <li>Designed RESTful API endpoints supporting <strong>30+ dynamic filters</strong> with intelligent caching, cutting downstream processing volume by 45% and reducing compute costs by $50K+ annually.</li>
-        <li>Implemented release notes management system using <strong>Java Spring Boot</strong> and <strong>Angular</strong>, with S3-backed APIs for reliable artifact retrieval and deployment tracking.</li>
-        <li>Championed code quality: maintained <strong>85% test coverage</strong> using JUnit and Mockito, mentored junior engineers on SOLID principles, and conducted 200+ code reviews.</li>
-        <li>Owned L3 production support: diagnosed and resolved <strong>90% of critical incidents</strong> on-call with <strong>30min avg MTTR</strong>, including complex distributed system debugging across microservices.</li>
+        <li>Re-architected a monolithic EC2 pipeline into distributed microservices using Apache Spark, cutting processing time by 70% and achieving a 10x increase in throughput through continuous process improvement.</li>
+        <li>Built Spark-based data transformation pipelines integrating 40+ models, with automated job triggering via S3 Event Notifications and AWS Lambda.</li>
+        <li>Developed scalable RESTful web services using Flask and Java, adhering to SOLID principles and architectural best practices for long-term maintainability.</li>
+        <li>Developed DataLens, a trade data query and visualization tool powered by AWS Athena, with infinite-scroll UI for seamless large-dataset navigation.</li>
+        <li>Engineered API endpoints supporting 30+ dynamic filters for model processing, optimizing resource utilization by eliminating redundant data and significantly reducing downstream processing volume.</li>
+        <li>Designed and implemented a release notes feature using Java and Angular. Created Java-based APIs to retrieve data from AWS S3 and integrated them with the front end.</li>
+        <li>Maintained 85% test coverage using JUnit and Mockito, participated in code reviews, and upheld coding standards and software quality across the team.</li>
+        <li>Facilitated live L3 production support, applying strong debugging and troubleshooting skills to diagnose and resolve 90% of high-priority incidents on-call.</li>
       </ul>
     </div>
-
     <div class="job">
       <div class="job-dot"></div>
       <div class="job-header">
@@ -604,11 +529,10 @@
       </div>
       <div class="job-company">iMocha · Pune, India</div>
       <ul>
-        <li>Authored <strong>50+ production-grade algorithmic problems</strong> spanning graphs, DP, and advanced DSA, evaluated by 100K+ candidates globally.</li>
-        <li>Engineered Python automation scripts for test case generation and validation, reducing manual QA effort by 70% and standardizing the assessment pipeline.</li>
+        <li>Authored 50+ complex algorithmic problems with efficient DSA solutions, covering topics across graphs, dynamic programming, and data structures.</li>
+        <li>Wrote automation scripts to generate and validate test cases, reducing manual evaluation effort by standardizing the test pipeline.</li>
       </ul>
     </div>
-
     <div class="job">
       <div class="job-dot"></div>
       <div class="job-header">
@@ -617,13 +541,11 @@
       </div>
       <div class="job-company">Mindstix Software Labs · Pune, India</div>
       <ul>
-        <li>Built responsive landing pages in <strong>React and Redux</strong> with drag-and-drop functionality, increasing user engagement by 35%.</li>
-        <li>Participated in code reviews and contributed to maintaining 90% code quality standards across the frontend team.</li>
+        <li>Built interactive landing pages in React and Redux with drag-and-drop functionality.</li>
+        <li>Collaborated with senior engineers in code reviews and followed coding standards to ensure consistent software quality.</li>
       </ul>
     </div>
-
   </section>
-
   <section id="education">
     <p class="section-label">// academics</p>
     <h2>Education</h2>
@@ -635,16 +557,14 @@
         <span><b>Duration</b> Aug 2019 – Jun 2023</span>
         <span><b>Location</b> Pune, India</span>
       </div>
-      <div class="coursework"><b>Relevant Coursework:</b> Data Structures &amp; Algorithms, Object-Oriented Programming, Operating Systems, Database Management, Computer Networks</div>
+      <div class="coursework"><b>Coursework:</b> Data Structures and Algorithms, Object-Oriented Programming, Operating Systems</div>
     </div>
   </section>
-
   <section id="skills">
     <p class="section-label">// tech stack</p>
     <h2>Skills</h2>
-
     <div class="skill-group">
-      <div class="skill-group-label">Programming Languages</div>
+      <div class="skill-group-label">Languages</div>
       <div class="skill-tags">
         <span class="tag">C++</span>
         <span class="tag">Java</span>
@@ -655,108 +575,92 @@
         <span class="tag">Ruby</span>
       </div>
     </div>
-
     <div class="skill-group">
-      <div class="skill-group-label">Big Data &amp; Databases</div>
+      <div class="skill-group-label">Concepts</div>
+      <div class="skill-tags">
+        <span class="tag">Distributed Systems</span>
+        <span class="tag">Multi-threading</span>
+        <span class="tag">Networking Protocols</span>
+        <span class="tag">Design Patterns</span>
+        <span class="tag">Data Structures and Algorithms</span>
+        <span class="tag">FIX protocol</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-label">Big Data</div>
       <div class="skill-tags">
         <span class="tag">Apache Spark</span>
         <span class="tag">Elasticsearch</span>
         <span class="tag">Redis</span>
-        <span class="tag">Apache Kafka</span>
+        <span class="tag">Kafka</span>
         <span class="tag">PostgreSQL</span>
       </div>
     </div>
-
     <div class="skill-group">
-      <div class="skill-group-label">Cloud — AWS</div>
+      <div class="skill-group-label">Cloud Platforms</div>
       <div class="skill-tags">
-        <span class="tag">S3</span>
+        <span class="tag">AWS S3</span>
         <span class="tag">Aurora</span>
         <span class="tag">EMR</span>
         <span class="tag">DynamoDB</span>
         <span class="tag">EC2</span>
         <span class="tag">Lambda</span>
-        <span class="tag">Athena</span>
-        <span class="tag">SQS/SNS</span>
-        <span class="tag">ECS</span>
         <span class="tag">Secrets Manager</span>
+        <span class="tag">Athena</span>
+        <span class="tag">SQS</span>
+        <span class="tag">SNS</span>
+        <span class="tag">ECS</span>
       </div>
     </div>
-
     <div class="skill-group">
-      <div class="skill-group-label">Frameworks &amp; Tools</div>
+      <div class="skill-group-label">Tools and Frameworks</div>
       <div class="skill-tags">
         <span class="tag">Spring Boot</span>
         <span class="tag">Flask</span>
         <span class="tag">Angular</span>
         <span class="tag">React</span>
         <span class="tag">Redux</span>
-        <span class="tag">REST APIs</span>
-        <span class="tag">gRPC</span>
+        <span class="tag">REST</span>
         <span class="tag">Jenkins</span>
         <span class="tag">Git</span>
         <span class="tag">Linux</span>
       </div>
     </div>
-
-    <div class="skill-group">
-      <div class="skill-group-label">Core Concepts</div>
-      <div class="skill-tags">
-        <span class="tag">Distributed Systems</span>
-        <span class="tag">Microservices</span>
-        <span class="tag">Multi-threading</span>
-        <span class="tag">Design Patterns</span>
-        <span class="tag">DSA</span>
-        <span class="tag">FIX Protocol</span>
-        <span class="tag">Networking</span>
-        <span class="tag">SOLID Principles</span>
-      </div>
-    </div>
   </section>
-
   <section id="achievements">
     <p class="section-label">// competitive programming</p>
     <h2>Achievements</h2>
-
     <div class="achievements-grid">
       <div class="achievement">
         <div class="badge-icon">⭐</div>
         <div class="achievement-text">
-          <div class="achievement-title">LeetCode — Knight Badge</div>
-          <div class="achievement-detail"><strong>Rating: 2010</strong> • Top 2.37% Globally</div>
-          <div class="achievement-detail" style="margin-top: 0.5rem;">Primary language: C++. 500+ problems solved with consistent ranking improvements.</div>
-          <span class="ranking-badge">Ranked 2010</span>
+          <div class="achievement-title">LeetCode</div>
+          <div class="achievement-detail">Knight Badge with a rating of 2010, placing in the top 2.37% globally. Primary language C++.</div>
+          <span class="ranking-badge">Top 2.37%</span>
         </div>
       </div>
-
       <div class="achievement">
         <div class="badge-icon">⚡</div>
         <div class="achievement-text">
-          <div class="achievement-title">Codeforces — Specialist</div>
-          <div class="achievement-detail"><strong>Rating: 1529</strong> </div>
-          <div class="achievement-detail" style="margin-top: 0.5rem;">Consistent participation in global competitive programming contests with focus on algorithmic problem-solving.</div>
+          <div class="achievement-title">Codeforces</div>
+          <div class="achievement-detail">Secured a Specialist rank with a rating of 1529.</div>
           <span class="ranking-badge">Specialist Rank</span>
         </div>
       </div>
-
       <div class="achievement">
-        <div class="badge-icon">★★★★</div>
+        <div class="badge-icon">★</div>
         <div class="achievement-text">
-          <div class="achievement-title">CodeChef — 4 Stars</div>
-          <div class="achievement-detail"><strong>Rating: 1974</strong></div>
-          <div class="achievement-detail" style="margin-top: 0.5rem;">Strong execution across long contests, short contests, and algorithmic challenges.</div>
+          <div class="achievement-title">CodeChef</div>
+          <div class="achievement-detail">Earned a rating of 1974 and a 4 rating.</div>
           <span class="ranking-badge">4 Star Rating</span>
         </div>
       </div>
     </div>
   </section>
-
 </main>
-
 <script>
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('nav a');
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -766,13 +670,7 @@
       }
     });
   }, { threshold: 0.35 });
-
   sections.forEach(s => observer.observe(s));
-
-  // Smooth scroll support for older browsers
-  if (!window.CSS || !CSS.supports('scroll-behavior', 'smooth')) {
-    document.documentElement.style.scrollBehavior = 'auto';
-  }
 </script>
 </body>
 </html>
